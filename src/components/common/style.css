@@ -1,0 +1,13 @@
+.header{
+    text-align: center;
+    font-size: 3em;
+    font-family: 'McLaren', cursive;
+}
+
+.footer{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 2em;
+    text-align: center;
+}
