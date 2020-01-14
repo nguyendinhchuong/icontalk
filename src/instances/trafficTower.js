@@ -43,7 +43,7 @@ class TrafficTower {
     this.PlaneQueue = this.PlaneQueue.filter(_plane => _plane.getPlaneID() !== plane.getPlaneID())
   }
   findMin = () => {
-    return Math.min(Math.min(this.TimeProcesList[0], this.TimeProcesList[1]), this.TimeProcesList[2])
+    return Math.min(...this.TimeProcesList)
   }
   removeMin = (min) => {
     const index = this.TimeProcesList.findIndex(time => time === min)
